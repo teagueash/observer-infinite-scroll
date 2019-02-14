@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 
+/*
+ * @useObserver {function} hook providing observer to sentinel component
+ */
 export const useObserver = ({ target, onIntersect }) => {
   useEffect(() => {
     const observer = new IntersectionObserver(onIntersect);
@@ -13,6 +16,9 @@ export const useObserver = ({ target, onIntersect }) => {
   });
 };
 
+/*
+ * @useDataLoader {function} hook providing data prop to list and setter functions
+ */
 export const useDataLoader = () => {
   const [data, setData] = useState([]);
   const [counter, setCounter] = useState(0);
@@ -33,6 +39,9 @@ export const useDataLoader = () => {
   };
 };
 
+/*
+ * @useSearch {function} hook providing input submission helpers and validation
+ */
 export const useSearch = () => {
   const [query, setQuery] = useState("");
   const [errorMessage, setErrorMessage] = useState(null);
@@ -64,6 +73,9 @@ export const useSearch = () => {
   };
 };
 
+/*
+ * @useInputValue {function} hook providing input logic to input component
+ */
 export const useInputValue = (initialValue = "") => {
   const [inputValue, setInputValue] = useState(initialValue);
 

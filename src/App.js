@@ -15,19 +15,36 @@ const AppContainer = styled.div`
 
 const AppHeader = styled.div`
   text-align: center;
-  width: 100%;
+  margin: 0 0.5em 0 0.5em;
 `;
 
 const ItemCounter = styled.div`
   text-align: center;
   color: #0b6e4f;
   position: fixed;
+  width: 150px;
   border: 1px solid #eee;
   line-height: 1em;
   margin-left: 1em;
   padding: 1em;
   top: 1em;
   font-size: 0.75em;
+
+  @media (max-width: 1024px) {
+    left: 0;
+    right: 0;
+    width: 250px;
+    margin: 0 auto;
+    top: 3.5em;
+  }
+
+  @media (max-width: 466px) {
+    left: 0;
+    right: 0;
+    width: 250px;
+    margin: 0 auto;
+    top: 5em;
+  }
 `;
 
 const ErrorMsg = styled.div`
@@ -37,6 +54,9 @@ const ErrorMsg = styled.div`
 
 /**
  * Basic container holding configuration for infinite scroll
+ * @useInputValue {function} hook providing input logic to input component
+ * @useSearch {function} hook providing input submission helpers and validation
+ * @useDataLoader {function} hook providing data prop to list and setter functions
  */
 function App() {
   const { inputValue, changeInput, keyInput } = useInputValue();

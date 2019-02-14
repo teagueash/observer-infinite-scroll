@@ -6,6 +6,10 @@ const SearchInputWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1024px) {
+    padding: 3em 0 1em 0;
+  }
 `;
 
 const StyledForm = styled.form`
