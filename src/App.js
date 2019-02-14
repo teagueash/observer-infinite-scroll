@@ -74,7 +74,6 @@ function App() {
       <SearchInput
         inputValue={inputValue}
         onInputChange={changeInput}
-        onButtonClick={injectedSearchQuery}
         onInputKeyPress={event => keyInput(event, injectedSearchQuery)}
       />
       {errorMessage ? (

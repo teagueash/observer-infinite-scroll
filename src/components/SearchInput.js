@@ -49,18 +49,6 @@ const StyledInput = styled.input`
   }
 `;
 
-const StyledButton = styled.button`
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  color: #444;
-  &:focus {
-    outline: inherit;
-  }
-`;
-
 function SearchInput(props) {
   return (
     <SearchInputWrapper>
@@ -73,9 +61,6 @@ function SearchInput(props) {
           onKeyPress={props.onInputKeyPress}
           required
         />
-        <StyledButton onClick={props.onButtonClick}>
-          <i className="fa fa-search fa-2x" />
-        </StyledButton>
       </StyledForm>
     </SearchInputWrapper>
   );
