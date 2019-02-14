@@ -1,4 +1,4 @@
-Basic infinite scroller leveraging the IntersectionObserver and Hooks APIs
+Basic infinite scroller leveraging the IntersectionObserver and Hooks APIs and the theory behind sentinels.
 
 # DEMO
 
