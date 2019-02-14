@@ -8,7 +8,7 @@ const SearchInputWrapper = styled.div`
   align-items: center;
 
   @media (max-width: 1024px) {
-    padding: 3em 0 1em 0;
+    padding: 4em 0 1em 0;
   }
 `;
 

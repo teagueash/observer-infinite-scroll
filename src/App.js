@@ -65,7 +65,7 @@ function App() {
   };
   return (
     <AppContainer>
-      <AppHeader>Enter the number of elements to render per batch</AppHeader>
+      <AppHeader>Enter the number of elements to render</AppHeader>
       <ItemCounter>Number of items rendered so far: {data.length}</ItemCounter>
 
       <SearchInput
