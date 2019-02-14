@@ -1,13 +1,13 @@
 {
-  "main.css": "/infinite-scroll/static/css/main.768efc7b.chunk.css",
-  "main.js": "/infinite-scroll/static/js/main.1a5926c1.chunk.js",
-  "main.js.map": "/infinite-scroll/static/js/main.1a5926c1.chunk.js.map",
-  "static/js/1.3cf10047.chunk.js": "/infinite-scroll/static/js/1.3cf10047.chunk.js",
-  "static/js/1.3cf10047.chunk.js.map": "/infinite-scroll/static/js/1.3cf10047.chunk.js.map",
-  "runtime~main.js": "/infinite-scroll/static/js/runtime~main.e80e05e6.js",
-  "runtime~main.js.map": "/infinite-scroll/static/js/runtime~main.e80e05e6.js.map",
-  "static/css/main.768efc7b.chunk.css.map": "/infinite-scroll/static/css/main.768efc7b.chunk.css.map",
-  "index.html": "/infinite-scroll/index.html",
-  "precache-manifest.e3f8bda96c4f3ce6d3cd56a95fb90079.js": "/infinite-scroll/precache-manifest.e3f8bda96c4f3ce6d3cd56a95fb90079.js",
-  "service-worker.js": "/infinite-scroll/service-worker.js"
+  "main.css": "/observer-infinite-scroll/static/css/main.768efc7b.chunk.css",
+  "main.js": "/observer-infinite-scroll/static/js/main.1a5926c1.chunk.js",
+  "main.js.map": "/observer-infinite-scroll/static/js/main.1a5926c1.chunk.js.map",
+  "static/js/1.344eae29.chunk.js": "/observer-infinite-scroll/static/js/1.344eae29.chunk.js",
+  "static/js/1.344eae29.chunk.js.map": "/observer-infinite-scroll/static/js/1.344eae29.chunk.js.map",
+  "runtime~main.js": "/observer-infinite-scroll/static/js/runtime~main.ade5c8ff.js",
+  "runtime~main.js.map": "/observer-infinite-scroll/static/js/runtime~main.ade5c8ff.js.map",
+  "static/css/main.768efc7b.chunk.css.map": "/observer-infinite-scroll/static/css/main.768efc7b.chunk.css.map",
+  "index.html": "/observer-infinite-scroll/index.html",
+  "precache-manifest.ffb44265915a73dea86151faf0f47723.js": "/observer-infinite-scroll/precache-manifest.ffb44265915a73dea86151faf0f47723.js",
+  "service-worker.js": "/observer-infinite-scroll/service-worker.js"
 }
