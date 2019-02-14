@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/observer-infinite-scroll/precache-manifest.5b326079a9027862a4cb168b1a4cd8c2.js"
+  "/observer-infinite-scroll/precache-manifest.5a458d76af4479c29804c093a8ff7d09.js"
 );
 
 workbox.clientsClaim();
