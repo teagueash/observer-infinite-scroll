@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Observer Infinite Scroll",
+  "name": "Infinite Scroll",
   "icons": [
     {
       "src": "favicon.ico",
