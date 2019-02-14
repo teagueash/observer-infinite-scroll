@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 import styled from "styled-components";
-import { useInputValue, useSearch, useDataLoader } from "./custom-hooks";
+import { useInputValue, useSearch } from "./custom-hooks";
 import SearchInput from "./components/SearchInput";
 import Sentinel from "./components/Sentinel";
 import List from "./components/List";
@@ -55,16 +55,13 @@ const ErrorMsg = styled.div`
 /**
  * Basic container holding configuration for infinite scroll
  * @useInputValue {function} hook providing input logic to input component
- * @useSearch {function} hook providing input submission helpers and validation
- * @useDataLoader {function} hook providing data prop to list and setter functions
+ * @useSearch {function} hook providing validation and data loading
  */
 function App() {
   const { inputValue, changeInput, keyInput } = useInputValue();
-  const { errorMessage, query, searchQuery } = useSearch();
-  const { data, loadInitial, loadMore } = useDataLoader();
-  const injectedSearchQuery = () => {
-    searchQuery(inputValue);
-    loadInitial(query);
+  const { errorMessage, data, loadInitial, loadMore } = useSearch();
+  const injectedLoadInitial = () => {
+    loadInitial(inputValue);
   };
   return (
     <AppContainer>
@@ -74,14 +71,14 @@ function App() {
       <SearchInput
         inputValue={inputValue}
         onInputChange={changeInput}
-        onInputKeyPress={event => keyInput(event, injectedSearchQuery)}
+        onInputKeyPress={event => keyInput(event, injectedLoadInitial)}
       />
       {errorMessage ? (
         <ErrorMsg>Error: {errorMessage}</ErrorMsg>
       ) : (
         <List data={data} />
       )}
-      {query && <Sentinel callback={() => loadMore(query)} />}
+      {data.length > 1 && <Sentinel callback={() => loadMore(inputValue)} />}
     </AppContainer>
   );
 }
