@@ -26,10 +26,7 @@ export const useSearch = () => {
 
   // helper function to apply validation and conditionally return an integer
   const validateQuery = q => {
-    if (
-      isNaN(q) ||
-      (q.includes(".") && parseFloat(q) > Math.floor(parseFloat(q)))
-    ) {
+    if (q % 1 !== 0) {
       // enforce integer only
       setErrorMessage("Input must be a whole, non-zero integer");
       return false;
